@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #88D6FF;
+    margin:0;
+}
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(101, 101, 101, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar li {
+    margin-left: 5vw;
+}
+
+#navbar li a {
+    float: left;
+    font-family: Arial Black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5vw 1.6vw;
+    text-decoration: none;
+}
+#navbar li img {
+    float: right;
+    margin-right: 2vw;
+    height: 9vh;
+}
+#navbar li a:hover {
+    background-color: #111;
+}
+.page{
+    height: 90vh;
+}
