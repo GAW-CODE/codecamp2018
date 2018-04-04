@@ -1,4 +1,19 @@
-﻿body {
+﻿/*
+
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+FIND A GOOD FONT AND COLOR SCHEME
+
+*/
+
+body {
     background-color: #88D6FF;
     margin:0;
 }
@@ -33,6 +48,44 @@
 #navbar li a:hover {
     background-color: #111;
 }
+
+#home{
+    text-align: center;
+    font-family: Oswald;
+}
+
+#home h1{
+    padding-top: 13vh;
+    font-size: 15vh;
+}
+
+#phrase{
+    font-size: 7vh;
+    padding-bottom: 0px;
+}
+
+#home p{
+    font-size: 5vh;
+}
+
+#time{
+    font-size: 4vh;
+}
+
 .page{
     height: 90vh;
+}
+
+#button{
+    height:8vh;
+    width:25vh;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 3vh;
 }
