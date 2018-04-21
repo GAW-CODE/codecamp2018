@@ -75,6 +75,9 @@ body {
 .page{
     height: 90vh;
 }
+.picture{
+  border-radius: 50%;
+}
 
 #button{
     height:8vh;
