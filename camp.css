@@ -75,6 +75,9 @@ body {
 .page{
     height: 90vh;
 }
+.picture{
+  border-radius: 50%;
+}
 
 #button{
     height:8vh;
@@ -88,4 +91,12 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     font-size: 3vh;
+}
+
+#about{
+
+}
+
+#aboutDesc{
+
 }
