@@ -7,10 +7,25 @@
     <meta charset="utf-8" />
     <title>Code Camp 2018</title>
     <link rel="stylesheet" type="text/css" href="camp.css">
+    <link rel="stylesheet" type="text/css" href="greet.css">
 </head>
 
 
 <body>
+    <!--Greeting animation-->
+    <div id="GreetContainer">
+        <div id="Greeting">
+            <div id="greetSpacer"></div>
+            <div id="topGreet"></div>
+            <h1 id="">CODE Camp</h1>
+            <div id="botGreet"></div>
+        </div>
+    </div>
+
+
+    <!--Everything but the greeting animation-->
+    <div id="ActualContent">
+    
     <ul id="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#schedule">Schedule</a></li>
@@ -20,43 +35,244 @@
 
     </ul>
 
-    <div id = 'home'>
+    <div class="page" id='home'>
         <h1 id = 'title'>
             CODE Camp
         </h1>
         <p id='phrase'>Get With The Program <br> <span id='time' >June 11 - 28, 2018 | Glen A. Wilson High School</span></p>
         <a href="https://bit.ly/codecamp18">
             <button id='button' href="bit.ly/codecamp18">
-                &lt; Join Us! /&gt;
+            &lt; Join Us! /&gt;
             </button>
         </a>
+
     </div>
     <!--Add pseudo code-->
 
     <!--About-->
     <div class="page" id='about'>
-        <h1 class = 'sectionHeader'>
-            About
-        </h1>
-        <p id = 'aboutDesc'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
+
     </div>
 
     <!--Schedule, table~~-->
-    <div class="page" id='schedule'>
+    <div class="page" id="schedule">
+        <div id="week_select">
+            <h3>Schedule</h3>
+            <div class="week_button">
+                <h5>Week 1</h5>
+                <p>6/4 - 6/7</p>
+            </div>
+            <div class="week_button">
+                <h5>Week 2</h5>
+                <p>6/11 - 6/14</p>
+            </div>
+            <div class="week_button">
+                <h5>Week 3</h5>
+                <p>6/18 - 6/21</p>
+            </div>
+        </div>
+
+        <div id="week_table">
+            <table class="schedule_table" id="table_one">
+                <tr>
+                    <th>
+                        <h6>Monday</h6>
+                        <p>July 4</p>
+                    </th>
+                    <td>
+                        <!--Insert Content-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h6>Tuesday</h6>
+                        <p>July 5</p>
+                    </th>
+                    <td>
+                        <!--Insert Content-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h6>Wednesday</h6>
+                        <p>July 6</p>
+                    </th>
+                    <td>
+                        <!--Insert Content-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h6>Thursday</h6>
+                        <p>July 7</p>
+                    </th>
+                    <td>
+                        <!--Insert Content-->
+                    </td>
+                </tr>
+                
+            </table>
+
+            <table class="schedule_table hide" id="table_two">
+                    <tr>
+                        <th>
+                            <h6>Monday</h6>
+                            <p>July 11</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Tuesday</h6>
+                            <p>July 12</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Wednesday</h6>
+                            <p>July 13</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Thursday</h6>
+                            <p>July 14</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    
+            </table>
+
+            <table class="schedule_table hide" id="table_three">
+                    <tr>
+                        <th>
+                            <h6>Monday</h6>
+                            <p>July 18</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Tuesday</h6>
+                            <p>July 19</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Wednesday</h6>
+                            <p>July 20</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Thursday</h6>
+                            <p>July 21</p>
+                        </th>
+                        <td>
+                            <!--Insert Content-->
+                        </td>
+                    </tr>
+                    
+            </table>
+        </div>
+
     </div>
 
     <!--Staff, take pics, list specialties-->
     <div class="page" id='staff'>
-    </div>
+        <h1 id="staff_title"><strong>Our Instructors </strong></h1>
+        <div id="instructors">
+            <!--staffer template:
+            <figure class="instructor">
+                <img class="instructor_image" src="#">
+                <figcaption class="instructor_name">FirstName LastName</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+            -->
 
-    <!--FAQ We need to ask around, or remember from Open House-->
-    <div class="page" id='faq'>
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Jack Chou</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Lilly Lee</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Keith Kwong</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Kyle Dang</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Justina Chen</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Jeffrey Liu</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+        </div>
     </div>
 
     <!--Sponsors, link to their websites?-->
     <div class="page" id='sponsors'>
+    </div>
+
+    <!--FAQ We need to ask around, or remember from Open House-->
+    <div class="page" id='faq'>
+        <h1 id="Question">FAQ</h1>
+        <div class="flex-container">
+            <div>
+            <h1>How do I sign up?</h1>
+            <p>You don't get to sign up </p>
+        </div>
+        <div>
+            <h1>How long is camp?</h1>
+            <p>5 weeks...LEARN TO READ!</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div>
+          <h1>Is there free food?</h1>
+          <p>No, go to the store and buy some!</p>
+        </div>
+        <div>
+          <h1>How much does it cost to come to camp?</h1>
+          <p>$1000</p>
+        </div>
+      </div>
     </div>
 
     <!--include: Contact, Copyright, Logo, Social Media, in no particular order-->
@@ -64,5 +280,9 @@
 
     </footer>
 
+    <!--End of ActualContentdiv below-->
+    </div>
+    <script src="dom.js"></script>
+    <script src="greet.js"></script>
 </body>
 </html>
