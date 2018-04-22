@@ -148,6 +148,10 @@ body {
 .week_button h5{
     padding-top: 7%;
     font-size: 2vw;
+    cursor: pointer;
+}
+.week_button p{
+    cursor: pointer;
 }
 .week_button:hover{
     color: rgb(0, 0, 0);
