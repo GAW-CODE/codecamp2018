@@ -30,6 +30,7 @@ body {
     height: fit-content;
 }
 
+/*------NAV & HOME------*/
 #navbar li {
     margin-left: 5vw;
 }
@@ -96,3 +97,15 @@ body {
     border-radius: 4px;
     font-size: 3vh;
 }
+
+/*------About------*/
+
+/*------Schedule------*/
+
+/*------Staff------*/
+
+/*------Sponsors------*/
+
+/*------FAQ------*/
+
+/*------Footer------*/
