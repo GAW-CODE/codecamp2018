@@ -84,7 +84,19 @@ body {
 .page{
     height: fit-content;
 }
-.picture{
+#picture1{
+  position: static;
+  margin-left: 10%;
+  border-radius: 50%;
+}
+#picture2{
+  position: relative;
+  left: 10%;
+  border-radius: 50%;
+}
+#picture3{
+  position: relative;;
+  left: 20%;
   border-radius: 50%;
 }
 
