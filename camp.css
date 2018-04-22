@@ -12,11 +12,19 @@ FIND A GOOD FONT AND COLOR SCHEME
 FIND A GOOD FONT AND COLOR SCHEME
 
 */
-
-body {
-    background-color: #88D6FF;
-    margin:0;
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    cursor: default;
+    font-family: sans-serif;
 }
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+/* TODO make nav sticky later*/
 #navbar {
     list-style-type: none;
     margin: 0;
@@ -25,8 +33,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: fit-content;
 }
 
+/*------NAV & HOME------*/
 #navbar li {
     margin-left: 5vw;
 }
@@ -37,12 +47,13 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 1.5vw 1.6vw;
+    padding: 0.7vw 1.6vw;
     text-decoration: none;
 }
 #navbar li img {
-    float: right;
-    margin-right: 2vw;
+    position:absolute;
+    right: 0;
+    top: 0;
     height: 9vh;
 }
 #navbar li a:hover {
@@ -52,6 +63,7 @@ body {
 #home{
     text-align: center;
     font-family: Oswald;
+    color: white;
 }
 
 #home h1{
@@ -73,12 +85,8 @@ body {
 }
 
 .page{
-    height: 90vh;
+    height: fit-content;
 }
-.picture{
-  border-radius: 50%;
-}
-
 #button{
     height:8vh;
     width:25vh;
@@ -92,7 +100,6 @@ body {
     border-radius: 4px;
     font-size: 3vh;
 }
-
 #Question{
   padding: 5vh;
   font-size: 8vh;
@@ -115,10 +122,178 @@ body {
 }
 
 }
-#about{
+/*------About------*/
 
+/*------Schedule------*/
+#schedule{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: rgb(253, 253, 253);
+}
+#week_select{
+    width: 25%;
+    height: 50vh;
+    text-align: center;
+    padding: 2%;
+}
+#week_select h3{
+    height: 9%;
+    width: 90%;
+    margin: auto;
+    font-size: 2.3vw;
+}
+.week_button{
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    border-top: 3px solid rgb(9, 9, 121);
+    border-collapse: collapse;
+    font-size: 1.6vw;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+.week_button h5{
+    padding-top: 7%;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.week_button p{
+    cursor: pointer;
+}
+.week_button:hover{
+    color: rgb(0, 0, 0);
+}
+#week_table{
+    width: 60%;
+}
+.schedule_table{
+    width: 100%;
+    height: 85%;
+    border: none;
+    padding-top: 3%;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.schedule_table tr{
+    height:25%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.schedule_table tr:nth-child(odd){
+    background-color: rgb(243, 243, 243);
+}
+.schedule_table tr:nth-child(even){
+    background-color: rgb(214, 214, 214);
+}
+.schedule_table th{
+    width: 20%;
+    border-right: 2px solid rgb(228, 228, 228);
+    font-size: 1.3vw;
+}
+.schedule_table th h6{
+    padding-top: 8%;
+    font-size: 1.7vw;
+}
+.schedule_table td{
+    width: 80%;
+}
+.hide{
+    display: none;
 }
 
-#aboutDesc{
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
 
+/*------Staff------*/
+#staff_title{
+    font-size: 2.5vw;
+    padding: 3% 0 0 1%;
+    width: 20%;
+    border-bottom: 2px solid rgb(29, 39, 134);
+}
+#instructors{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+}
+.instructor{
+    width: 10vw;
+    margin: 2%;
+    height: 30vh;
+    padding: 1%;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    font-size: 1.1vw;
+    color: rgb(34, 34, 141);
+}
+.instructor_image{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.instructor_name{
+    font-size: 1.5vw;
+    padding-top: 2%;
+}
+
+/*------Sponsors------*/
+
+/*------FAQ------*/
+
+/*------Footer------*/
+
+/*Greeting*/
+#ActualContent{
+    display: none;
+    opacity: 0;
+    animation-name: show;
+    animation-iteration-count: 1;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*Scroll Bar*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
 }
