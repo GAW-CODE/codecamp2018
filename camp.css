@@ -124,7 +124,7 @@ body {
     background-color: rgb(253, 253, 253);
 }
 #week_select{
-    width: 30%;
+    width: 25%;
     height: 50vh;
     text-align: center;
     padding: 2%;
@@ -142,7 +142,7 @@ body {
     border-top: 3px solid rgb(9, 9, 121);
     border-collapse: collapse;
     font-size: 1.6vw;
-    color: rgb(136, 136, 136);
+    color: rgb(92, 92, 92);
 }
 .week_button h5{
     padding-top: 7%;
@@ -150,6 +150,42 @@ body {
 }
 .week_button:hover{
     color: rgb(0, 0, 0);
+}
+#week_table{
+    width: 60%;
+}
+.schedule_table{
+    width: 100%;
+    height: 85%;
+    border: none;
+    padding-top: 3%;
+}
+.schedule_table tr{
+    height:25%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.schedule_table tr:nth-child(odd){
+    background-color: rgb(243, 243, 243);
+}
+.schedule_table tr:nth-child(even){
+    background-color: rgb(214, 214, 214);
+}
+.schedule_table th{
+    width: 20%;
+    border-right: 2px solid rgb(228, 228, 228);
+    font-size: 1.3vw;
+}
+.schedule_table th h6{
+    padding-top: 8%;
+    font-size: 1.7vw;
+}
+.schedule_table td{
+    width: 80%;
+}
+.hide{
+    display: none;
 }
 
 /*------Staff------*/
