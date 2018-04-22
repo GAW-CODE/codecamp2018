@@ -143,6 +143,7 @@ body {
     border-collapse: collapse;
     font-size: 1.6vw;
     color: rgb(92, 92, 92);
+    cursor: pointer;
 }
 .week_button h5{
     padding-top: 7%;
