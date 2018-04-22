@@ -7,10 +7,25 @@
     <meta charset="utf-8" />
     <title>Code Camp 2018</title>
     <link rel="stylesheet" type="text/css" href="camp.css">
+    <link rel="stylesheet" type="text/css" href="greet.css">
 </head>
 
 
 <body>
+    <!--Greeting animation-->
+    <div id="GreetContainer">
+        <div id="Greeting">
+            <div id="greetSpacer"></div>
+            <div id="topGreet"></div>
+            <h1 id="">CODE Camp</h1>
+            <div id="botGreet"></div>
+        </div>
+    </div>
+
+
+    <!--Everything but the greeting animation-->
+    <div id="ActualContent">
+    
     <ul id="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#schedule">Schedule</a></li>
@@ -243,6 +258,10 @@
     <footer>
 
     </footer>
+
+    <!--End of ActualContentdiv below-->
+    </div>
     <script src="dom.js"></script>
+    <script src="greet.js"></script>
 </body>
 </html>
