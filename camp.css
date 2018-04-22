@@ -77,10 +77,12 @@ body {
 }
 
 .page{
-    height: fit-content;
+    height: 90vh;
+    padding-top: 20vh;
+
 }
 .picture{
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 #button{
@@ -95,4 +97,16 @@ body {
     border: 1px solid transparent;
     border-radius: 4px;
     font-size: 3vh;
+}
+
+.sectionHeader{
+    font-size: 7vh;
+    padding-left: 20vh;
+}
+
+#aboutDesc{
+    width: 80vh;
+    padding-left: 20vh;
+    font-size: 4vh;
+    display:inline-block;
 }
