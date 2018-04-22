@@ -79,6 +79,9 @@ body {
 .page{
     height: fit-content;
 }
+.picture{
+  border-radius: 50%;
+}
 
 #button{
     height:8vh;
