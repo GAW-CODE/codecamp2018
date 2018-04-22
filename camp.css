@@ -12,10 +12,14 @@ FIND A GOOD FONT AND COLOR SCHEME
 FIND A GOOD FONT AND COLOR SCHEME
 
 */
-
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    cursor: default;
+}
 body {
     background-color: #88D6FF;
-    margin:0;
 }
 
 /* TODO make nav sticky later*/
@@ -101,6 +105,40 @@ body {
 /*------About------*/
 
 /*------Schedule------*/
+#schedule{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: rgb(253, 253, 253);
+}
+#week_select{
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    padding: 2%;
+}
+#week_select h3{
+    height: 9%;
+    width: 90%;
+    margin: auto;
+    font-size: 2.3vw;
+}
+.week_button{
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    border-top: 3px solid rgb(9, 9, 121);
+    border-collapse: collapse;
+    font-size: 1.6vw;
+    color: rgb(136, 136, 136);
+}
+.week_button h5{
+    padding-top: 7%;
+    font-size: 2vw;
+}
+.week_button:hover{
+    color: rgb(0, 0, 0);
+}
 
 /*------Staff------*/
 
