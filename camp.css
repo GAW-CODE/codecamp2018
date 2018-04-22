@@ -100,28 +100,7 @@ body {
     border-radius: 4px;
     font-size: 3vh;
 }
-#Question{
-  padding: 5vh;
-  font-size: 8vh;
-}
 
-.flex-container {
-  padding:10px;
-  display: flex;
-  flex-wrap: nowrap;
-
-}
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100vh;
-  height:auto;
-  margin: 4vh;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-}
 /*------About------*/
 
 /*------Schedule------*/
@@ -256,6 +235,29 @@ body {
 /*------Sponsors------*/
 
 /*------FAQ------*/
+#faq{
+    background-color: rgb(243, 243, 243);
+}
+#Question{
+    padding: 5vh;
+    font-size: 8vh;
+  }
+  
+  .flex-container {
+    padding:10px;
+    display: flex;
+    flex-wrap: nowrap;
+  
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100vh;
+    height:auto;
+    margin: 4vh;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
 
 /*------Footer------*/
 
