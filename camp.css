@@ -196,21 +196,26 @@ body {
 /*------Staff------*/
 #staff_title{
     font-size: 2.5vw;
-    padding: 3%;
+    padding: 3% 0 0 1%;
+    width: 20%;
+    border-bottom: 2px solid rgb(29, 39, 134);
 }
 #instructors{
     width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 2%;
+    flex-wrap: wrap;
 }
 .instructor{
-    width: 12vw;
-    height: 25vh;
-    padding: 3%;
+    width: 10vw;
+    margin: 2%;
+    height: 30vh;
+    padding: 1%;
     background-color: rgb(248, 248, 248);
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     color: rgb(34, 34, 141);
 }
 .instructor_image{
@@ -219,7 +224,8 @@ body {
     margin: auto;
 }
 .instructor_name{
-    font-size: 1.7vw;
+    font-size: 1.5vw;
+    padding-top: 2%;
 }
 
 /*------Sponsors------*/
