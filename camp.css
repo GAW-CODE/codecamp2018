@@ -1,4 +1,4 @@
-﻿/*
+/*
 FIND A GOOD FONT AND COLOR SCHEME
 FIND A GOOD FONT AND COLOR SCHEME
 FIND A GOOD FONT AND COLOR SCHEME
@@ -85,22 +85,6 @@ body {
 .page{
     height: fit-content;
 }
-.picture1{
-  position: static;
-  margin-left: 10%;
-  border-radius: 50%;
-}
-.picture2{
-  position: relative;
-  left: 10%;
-  border-radius: 50%;
-}
-.picture3{
-  position: relative;
-  left: 20%;
-  border-radius: 50%;
-}
-
 #button{
     height:8vh;
     width:25vh;
@@ -116,6 +100,12 @@ body {
 }
 
 /*------About------*/
+#about{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: rgb(253, 253, 253);
+}
 
 /*------Schedule------*/
 #schedule{
@@ -309,11 +299,7 @@ body {
 {
     background-color: #0ae;
 
-<<<<<<< HEAD
-/*------Footer------*/
-=======
     background-image: -webkit-gradient(linear, 0 0, 0 100%,
                        color-stop(.5, rgba(255, 255, 255, .2)),
                        color-stop(.5, transparent), to(transparent));
 }
->>>>>>> bdd9ee125a6a6b5ab4e3adfa2761e23ac74d4346

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -7,10 +7,25 @@
     <meta charset="utf-8" />
     <title>Code Camp 2018</title>
     <link rel="stylesheet" type="text/css" href="camp.css">
+    <link rel="stylesheet" type="text/css" href="greet.css">
 </head>
 
 
 <body>
+    <!--Greeting animation-->
+    <div id="GreetContainer">
+        <div id="Greeting">
+            <div id="greetSpacer"></div>
+            <div id="topGreet"></div>
+            <h1 id="">CODE Camp</h1>
+            <div id="botGreet"></div>
+        </div>
+    </div>
+
+
+    <!--Everything but the greeting animation-->
+    <div id="ActualContent">
+
     <ul id="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#schedule">Schedule</a></li>
@@ -20,7 +35,7 @@
 
     </ul>
 
-    <div class="page" id = 'home'>
+    <div class="page" id='home'>
         <h1 id = 'title'>
             CODE Camp
         </h1>
@@ -36,28 +51,34 @@
 
     <!--About-->
     <div class="page" id='about'>
-
+      <h1><strong>ABOUT THE CAMP:</strong></h1>
+    </div>
+    <div class = "page" id = 'about'>
+      <p> Code Camp is a yearly training camp held by Glen A Wilson CODE and provides a fun environment in which students can learn the basics of computer science and coding.
+      At Code Camp, students are taught the basics of computers as well as web design. Front end languages such as HTML and CSS will be covered and we cover backend web design
+      as well, such as Javascript and Databasing.</p>
     </div>
 
     <!--Schedule, table~~-->
-    <div class="page" id='schedule'>
+    <div class="page" id="schedule">
         <div id="week_select">
+            <h3>Schedule</h3>
             <div class="week_button">
-                <h5>week 1</h5>
+                <h5>Week 1</h5>
                 <p>6/4 - 6/7</p>
             </div>
             <div class="week_button">
-                <h5>week 2</h5>
+                <h5>Week 2</h5>
                 <p>6/11 - 6/14</p>
             </div>
             <div class="week_button">
-                <h5>week 3</h5>
+                <h5>Week 3</h5>
                 <p>6/18 - 6/21</p>
             </div>
         </div>
 
         <div id="week_table">
-            <table id="table_one">
+            <table class="schedule_table" id="table_one">
                 <tr>
                     <th>
                         <h6>Monday</h6>
@@ -97,7 +118,7 @@
 
             </table>
 
-            <table id="table_two">
+            <table class="schedule_table hide" id="table_two">
                     <tr>
                         <th>
                             <h6>Monday</h6>
@@ -137,7 +158,7 @@
 
             </table>
 
-            <table id="table_three">
+            <table class="schedule_table hide" id="table_three">
                     <tr>
                         <th>
                             <h6>Monday</h6>
@@ -182,19 +203,52 @@
 
     <!--Staff, take pics, list specialties-->
     <div class="page" id='staff'>
-      <h1><strong>THE STAFF </strong></h1>
-    <div>
-      <div class = "picture1">
-        <img src="picture.jpg" class = "picture1">
-        <img src = "picture.jpg" class = "picture2">
-        <img src = "picture.jpg" class = "picture3">
-      </div>
-    </div>
-    <div>
-      <img src = "picture.jpg" class = "picture1">
-      <img src = "picture.jpg" class = "picture2">
-      <img src = "picture.jpg" class = "picture3">
-    </div>
+        <h1 id="staff_title"><strong>Our Instructors </strong></h1>
+        <div id="instructors">
+            <!--staffer template:
+            <figure class="instructor">
+                <img class="instructor_image" src="#">
+                <figcaption class="instructor_name">FirstName LastName</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+            -->
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Jack Chou</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Lilly Lee</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Keith Kwong</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Kyle Dang</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Justina Chen</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+
+            <figure class="instructor">
+                <img class="instructor_image" src="instructors/temp.jpg">
+                <figcaption class="instructor_name">Jeffrey Liu</figcaption>
+                <figcaption class="instructor_role">Role/Specialty</figcaption>
+            </figure>
+        </div>
     </div>
 
     <!--Sponsors, link to their websites?-->
@@ -203,6 +257,27 @@
 
     <!--FAQ We need to ask around, or remember from Open House-->
     <div class="page" id='faq'>
+        <h1 id="Question">FAQ</h1>
+        <div class="flex-container">
+            <div>
+            <h1>How do I sign up?</h1>
+            <p>You don't get to sign up </p>
+        </div>
+        <div>
+            <h1>How long is camp?</h1>
+            <p>5 weeks...LEARN TO READ!</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div>
+          <h1>Is there free food?</h1>
+          <p>No, go to the store and buy some!</p>
+        </div>
+        <div>
+          <h1>How much does it cost to come to camp?</h1>
+          <p>$1000</p>
+        </div>
+      </div>
     </div>
 
     <!--include: Contact, Copyright, Logo, Social Media, in no particular order-->
@@ -210,5 +285,9 @@
 
     </footer>
 
+    <!--End of ActualContentdiv below-->
+    </div>
+    <script src="dom.js"></script>
+    <script src="greet.js"></script>
 </body>
 </html>
