@@ -65,17 +65,12 @@ body {
 }
 
 #home h1{
-    padding-top: 13vh;
-    font-size: 15vh;
+    font-size: 20vh;
 }
 
 #phrase{
     font-size: 7vh;
-    padding-bottom: 0px;
-}
-
-#home p{
-    font-size: 5vh;
+    padding-bottom: 10vh;
 }
 
 #time{
@@ -86,9 +81,8 @@ body {
     height: fit-content;
 }
 #button{
-    height:8vh;
-    width:25vh;
-    padding: 6px 12px;
+    height:10vh;
+    width:30vh;
     margin-bottom: 0;
     font-weight: 400;
     text-align: center;
@@ -96,7 +90,16 @@ body {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    font-size: 3vh;
+    font-size: 4vh;
+}
+
+#title{
+    padding-top: 21vh;
+    padding-bottom: 7vh;
+}
+
+#filler{
+    height: 10vh;
 }
 
 /*------About------*/
