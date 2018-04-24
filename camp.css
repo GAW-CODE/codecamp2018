@@ -220,7 +220,7 @@ body {
     font-size: 2.5vw;
     padding: 3% 0 0 1%;
     width: 20%;
-    border-bottom: 2px solid rgb(29, 39, 134);
+    color:rgb(228, 228, 228);
 }
 #instructors{
     width: 95%;
