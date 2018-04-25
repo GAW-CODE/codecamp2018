@@ -1,4 +1,4 @@
-﻿<<OCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -35,43 +35,23 @@
         <li><a href="#sponsor">Sponsor</a></li>
 
     </ul>
+    <div id = "background-part">
+      <!-- count particles -->
+      <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+      </div>
 
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
 
-<div id = "background-part">
-  <!-- count particles -->
-  <div class="count-particles">
-    <span class="js-count-particles">--</span> particles
-  </div>
+      <!-- scripts -->
+      <script src="particles/particles.js"></script>
+      <script src="particles/app.js"></script>
 
-  <!-- particles.js container -->
-  <div id="particles-js"></div>
-
-  <!-- scripts -->
-  <script src="particles/particles.js"></script>
-  <script src="particles/app.js"></script>
-
-  <!-- stats.js -->
-  <script src="particles/stats.js"></script>
-  <script>
-    var count_particles, stats, update;
-    stats = new Stats;
-    stats.setMode(0);
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.left = '0px';
-    stats.domElement.style.top = '0px';
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector('.js-count-particles');
-    update = function() {
-      stats.begin();
-      stats.end();
-      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-  </script>
-</div>
+      <!-- stats.js -->
+      <script src="particles/stats.js"></script>
+      <script src="particles2.js"></script>
+    </div>
 
     <div class="page" id='home'>
         <h1 id = 'title'>
@@ -103,9 +83,9 @@
     </div>
 
 <!--Staff, take pics, list specialties-->
-    <div class="page" id='staff'>
+    <div class="page" class='staff'>
         <h1 id = 'staff_title'>Our Instructors</h1>
-        <div id="instructors">
+        <div class="instructors">
             <!--staffer template:
             <figure class="instructor">
                 <img class="instructor_image" src="#">
@@ -131,26 +111,27 @@
                 <figcaption class="instructor_name">Keith Kwong</figcaption>
                 <figcaption class="instructor_role">Role/Specialty</figcaption>
             </figure>
-
-            <figure class="instructor">
-                <img class="instructor_image" src="instructors/temp.jpg">
-                <figcaption class="instructor_name">Kyle Dang</figcaption>
-                <figcaption class="instructor_role">Role/Specialty</figcaption>
-            </figure>
-
-            <figure class="instructor">
-                <img class="instructor_image" src="instructors/temp.jpg">
-                <figcaption class="instructor_name">Justina Chen</figcaption>
-                <figcaption class="instructor_role">Role/Specialty</figcaption>
-            </figure>
-
-            <figure class="instructor">
-                <img class="instructor_image" src="instructors/temp.jpg">
-                <figcaption class="instructor_name">Jeffrey Liu</figcaption>
-                <figcaption class="instructor_role">Role/Specialty</figcaption>
-            </figure>
         </div>
-    </div>
+        <div class = "instructors">
+          <figure class="instructor">
+              <img class="instructor_image" src="instructors/temp.jpg">
+              <figcaption class="instructor_name">Kyle Dang</figcaption>
+              <figcaption class="instructor_role">Role/Specialty</figcaption>
+          </figure>
+
+          <figure class="instructor">
+              <img class="instructor_image" src="instructors/temp.jpg">
+              <figcaption class="instructor_name">Justina Chen</figcaption>
+              <figcaption class="instructor_role">Role/Specialty</figcaption>
+          </figure>
+
+          <figure class="instructor">
+              <img class="instructor_image" src="instructors/temp.jpg">
+              <figcaption class="instructor_name">Jeffrey Liu</figcaption>
+              <figcaption class="instructor_role">Role/Specialty</figcaption>
+          </figure>
+        </div>
+  </div>
 
 
     <!--Schedule, table~~-->
