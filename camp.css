@@ -47,6 +47,7 @@ body {
     text-align: center;
     padding: 0.7vw 1.6vw;
     text-decoration: none;
+    font-size: 3vh;
 }
 #navbar li img {
     position:absolute;
@@ -88,14 +89,14 @@ body {
 }
 #button{
     height:10vh;
-    width:30vh;
+    width:35vh;
     margin-bottom: 0;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    border: 0.5vh solid transparent;
+    border-radius: 1vw;
     font-size: 4vh;
 }
 
@@ -131,10 +132,13 @@ body {
     padding-top: 2vh;
     font-size: 3vh;
     line-height: 5vh;
+    padding-bottom: 4vh;
 }
 
-#vid{
+#video{
     display:inline-block;
+    padding-bottom: 1vh;
+    padding-left: 3vw;
 }
 /*------Schedule------*/
 #schedule{
@@ -276,6 +280,14 @@ body {
 #faq{
     background-color: rgb(243, 243, 243);
 }
+
+#faq h1{
+    font-size: 6.5vh;
+    text-align: left;
+    padding-top:4vh;
+    padding-left:10vh;
+}
+
 #Question{
     padding: 5vh;
     font-size: 5vh;
