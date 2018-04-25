@@ -168,6 +168,7 @@ body {
     color: rgb(0, 0, 0);
 }
 #week_table{
+    padding-top: 3%;
     width: 60%;
 }
 .schedule_table{
@@ -228,7 +229,7 @@ body {
     width: 20%;
     color:rgb(228, 228, 228);
 }
-#instructors{
+.instructors{
     width: 95%;
     margin: auto;
     display: flex;
