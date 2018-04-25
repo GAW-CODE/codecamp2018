@@ -125,8 +125,16 @@ body {
 }
 
 #aboutDesc{
+    display:inline-block;
+    width:40%;
+    padding-left:10vh;
+    padding-top: 2vh;
+    font-size: 3vh;
 }
 
+#vid{
+    display:inline-block;
+}
 /*------Schedule------*/
 #schedule{
     display: flex;
