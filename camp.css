@@ -336,10 +336,6 @@ body {
   }
 
 /*------Footer------*/
-footer{
-    width:100%;
-}
-
 footer p{
     font-size: 3vh;
 }
@@ -365,11 +361,17 @@ footer p{
 footer ul{
     text-decoration: none;
     padding-left: 5vh;
-    padding-bottom: 7%
+    color: white;
 }
 
 footer li{
     padding-top: 1vh;
+    text-decoration: none;
+    color:white;
+}
+
+a:visited{
+    color:white;    
 }
 
 footer img{
@@ -378,6 +380,7 @@ footer img{
     object-fit: cover;
     padding-left: 20%;
     padding-top:5%;
+    padding-bottom: 10vh;
 }
 
 /*Greeting*/
