@@ -146,6 +146,24 @@ body {
     padding-left: 3vw;
 }
 /*------Schedule------*/
+
+tr td{
+    padding-left: 2vh;
+    font-family:sans-serif;
+    font-size:3vh;
+    overflow-y:scroll;
+
+}
+
+.topic_name{
+    font-weight: bold;
+    padding-top: 1.5vh;
+}
+
+.lesson_links{
+    padding-left: 4vh;
+}
+
 #schedule{
     display: flex;
     flex-wrap: nowrap;
