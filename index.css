@@ -143,13 +143,16 @@ tr td{
 
 }
 
-.topic_name{
+.lessons{
     font-weight: bold;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-decoration: none;
+    color: black;
 }
 
-.lesson_links{
-    padding-left: 4vh;
+.lessons:hover{
+    cursor:pointer;
 }
 
 #schedule{
