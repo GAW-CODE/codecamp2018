@@ -38,6 +38,7 @@ body {
     padding: 1vw 1vw;
     text-decoration: none;
     font-size: 3.5vh;
+    cursor: pointer;
 }
 #navbar li img {
     position:absolute;
