@@ -64,7 +64,6 @@ body {
   position: absolute;
   height: 102%;
   width: 100%;
-  z-index: -1;
 }
 
 #home h1{
@@ -382,7 +381,7 @@ footer li{
 }
 
 a:visited{
-    color:white;    
+    color:white;
 }
 
 footer img{
