@@ -1,16 +1,4 @@
-﻿/*
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-FIND A GOOD FONT AND COLOR SCHEME
-*/
-*{
+﻿*{
     padding: 0;
     margin: 0;
     user-select: none;
@@ -50,6 +38,7 @@ body {
     padding: 1vw 1vw;
     text-decoration: none;
     font-size: 3.5vh;
+    cursor: pointer;
 }
 #navbar li img {
     position:absolute;
@@ -63,6 +52,7 @@ body {
 }
 #navbar li a:hover {
     background-color: #111;
+    cursor: pointer;
 }
 
 #home{
@@ -146,6 +136,27 @@ body {
     padding-left: 3vw;
 }
 /*------Schedule------*/
+
+tr td{
+    padding-left: 2vh;
+    font-family:sans-serif;
+    font-size:3vh;
+    overflow-y:scroll;
+
+}
+
+.lessons{
+    font-weight: bold;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-decoration: none;
+    color: black;
+}
+
+.lessons:hover{
+    cursor:pointer;
+}
+
 #schedule{
     display: flex;
     flex-wrap: nowrap;
@@ -280,22 +291,34 @@ body {
 }
 
 /*------Sponsors------*/
+#sponsor{
+    font-size: 6.5vh;
+    padding-top:4vh;
+    padding-left:10vh;
+    color:black;
+    background-color: rgb(253, 253, 253);
+    display: none;
+}
+
+#sponsor h1{
+    font-size: 6.5vh;
+    color:black;
+}
 
 /*------FAQ------*/
-#faq{
-    background-color: rgb(243, 243, 243);
-}
 
 #faq h1{
     font-size: 6.5vh;
     text-align: left;
     padding-top:4vh;
     padding-left:10vh;
+    color: rgb(243, 243, 243);
 }
 
 #Question{
     padding: 5vh;
     font-size: 5vh;
+    color: rgb(243, 243, 243);
   }
 
   .flex-container {
@@ -312,47 +335,63 @@ body {
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    border-radius: 10%;
+    overflow:hidden;
   }
 
   #concerns{
     font-size: 4vh;
     padding-left:10vh;
     padding-top:4vh;
+    color: rgb(243, 243, 243);
   }
 
 /*------Footer------*/
-footer{
-    background-color: rgb(0, 0, 0);
-    color: rgb(243, 243, 243);
+footer p{
+    font-size: 3vh;
 }
+
 #contact{
-    display:inline;
-    padding-top: 10vh;
-    padding-left:5vh;
+    color:white;
+    display: inline;
+    float:left;
+    font-size: 2.5vh;
+    padding-left:20vh;
+    padding-top:7vh;
 }
-#social{
+
+#connect{
+    color:white;
+    display: inline;
     float:right;
-    display:inline;
-
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    font-size: 2.5vh;
+    padding-right: 20vh;
+    padding-top:7vh;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+footer ul{
     text-decoration: none;
+    padding-left: 5vh;
+    color: white;
+}
+
+footer li{
+    padding-top: 1vh;
+    text-decoration: none;
+    color:white;
+}
+
+a:visited{
+    color:white;    
+}
+
+footer img{
+    height: 17vh;
+    width:20vh;
+    object-fit: cover;
+    padding-left: 20%;
+    padding-top:5%;
+    padding-bottom: 10vh;
 }
 
 /*Greeting*/
