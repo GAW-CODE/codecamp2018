@@ -16,7 +16,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(101, 101, 101, 0.7);
-    position: fixed;
     top: 0;
     width: 100%;
     height: fit-content;
